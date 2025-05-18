@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de evento</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1>Registro de Evento</h1>
+    <form id="registroEvento">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required />
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required />
+
+        <fieldset>
+            <legend>Intereses:</legend>
+            <div class="checkbox-group">
+                <label>Tecnología
+                    <input type="checkbox" name="intereses" value="tecnología" /></label>
+                <label>Negocios <input type="checkbox" name="intereses" value="negocios" /></label>
+                <label>Arte <input type="checkbox" name="intereses" value="arte" /></label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Horario preferido:</legend>
+            <div class="radio-group">
+                <label>Mañana <input type="radio" name="horario" value="mañana" required /></label>
+                <label>Tarde <input type="radio" name="horario" value="tarde" /></label>
+                <label>Noche <input type="radio" name="horario" value="noche" /></label>
+            </div>
+        </fieldset>
+
+        <label for="fecha">Fecha del evento:</label>
+        <input type="date" id="fecha" name="fecha" required />
+
+        <label for="hora">Hora preferida:</label>
+        <input type="time" id="hora" name="hora" required />
+
+        <label for="archivo">Documento de identificación (opcional):</label>
+        <input type="file" id="archivo" name="archivo" accept=".pdf,.jpg,.png" />
+
+        <button type="submit">Registrarse</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
